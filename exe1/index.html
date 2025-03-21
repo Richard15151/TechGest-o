@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>TECH GESTÃO</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="titulo">
+        <h1>Calculando Valor de Horas Extras ⌚</h1>
+      </div>
+      <div class="content">
+        <div class="input">
+          <h1>Valores:</h1>
+          <label for="salario">Salário:</label>
+          <input type="number" name="salario" id="salario" />
+          <br />
+          <label for="horasnormais">Horas extras em dias úteis:</label>
+          <input type="number" name="horasnormais" id="horasnormais" />
+          <br/>
+          <label for="horasfds">Horas extras em final de semana:</label>
+          <input type="number" name="horasfds" id="horasfds" />
+          <br />
+          <button class="botao" onclick="calcular()">Calcular</button>
+        </div> 
+        <div class="resultado">
+            <h1>Resultado:</h1>
+                <div class="prompt">
+                    <p id="res"></p>
+                </div>
+                <div class="botoes">
+                    <button class="botao2" onclick="limpar()">Limpar 🧹</button>
+                    <a class="botao2" href="../index1.html">Voltar 🏠</a>
+                </div>
+            <h3 id="datetime"></h3>
+        </div>
+      </div>
+    </div>
+    <script>
+      function atualizarDataHora() {
+        // Criando um objeto Date para pegar a data e a hora atuais
+        const agora = new Date();
+
+        // Formatando a data e hora no formato brasileiro (DD/MM/AAAA HH:MM:SS)
+        const dataFormatada = agora.toLocaleDateString("pt-BR");
+        const horaFormatada = agora.toLocaleTimeString("pt-BR");
+
+        // Concatenando data e hora
+        const dataHoraCompleta = `${dataFormatada} - ${horaFormatada}`;
+
+        // Inserindo o valor formatado dentro do elemento com id="datetime"
+        document.getElementById("datetime").textContent = dataHoraCompleta;
+      }
+
+      // Chamando a função para exibir a data e hora assim que a página carregar
+      atualizarDataHora();
+
+      // Atualizando a hora a cada segundo
+      setInterval(atualizarDataHora, 1000);
+    </script>
+    <script src="codigo.js"></script>
+  </body>
+</html>
