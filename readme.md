@@ -4,6 +4,7 @@
 # TECHGESTÃO
 **Descrição:**
 Oferecemos um software completo para otimizar processos e impulsionar o sucesso da sua empresa. Nossos serviços incluem cálculo de horas extras, simulação de aumento de salário e gestão do transporte de funcionários. Contamos com uma calculadora simples para facilitar as operações do dia a dia. Nosso objetivo é fornecer soluções eficientes e intuitivas para uma gestão mais inteligente.
+## Visite o site: https://richard15151.github.io/TechGestao/
 ## Índice
 * [Funcionalidades](#funcionalidades)
 * [Tecnologias](#tecnologias-utilizadas)
