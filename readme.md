@@ -1,6 +1,6 @@
 
 ### Curso Técnico de Desenvolvimento de Sistemas - Senai Itapeva
-![Imagem de capa]()
+![Imagem de capa](/gifs/TecHGestão.gif)
 # TECHGESTÃO
 **Descrição:**
 Oferecemos um software completo para otimizar processos e impulsionar o sucesso da sua empresa. Nossos serviços incluem cálculo de horas extras, simulação de aumento de salário e gestão do transporte de funcionários. Contamos com uma calculadora simples para facilitar as operações do dia a dia. Nosso objetivo é fornecer soluções eficientes e intuitivas para uma gestão mais inteligente.
